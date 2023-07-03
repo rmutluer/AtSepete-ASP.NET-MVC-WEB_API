@@ -39,7 +39,7 @@ namespace AtSepete.Business.Concrete
             var client = new SendGridClient(apiKey);
 
 
-            var From = new EmailAddress("blogapprhf@gmail.com", "ATSEPETE");
+            var From = new EmailAddress("", "ATSEPETE");
             var To = new EmailAddress(toEmail);
             var Subject = subject;
             var PlainTextContent = message;
@@ -56,7 +56,7 @@ namespace AtSepete.Business.Concrete
             // See https://sendgrid.com/docs/User_Guide/Settings/tracking.html
             msg.SetClickTracking(false, false);
             await client.SendEmailAsync(msg);
-            //logger'a bakılacak!!!!!
+            //
             //_logger.LogInformation(response.IsSuccessStatusCode
             //                       ? $"Email to {toEmail} queued successfully!"
             //                       : $"Failure Email to {toEmail}");
