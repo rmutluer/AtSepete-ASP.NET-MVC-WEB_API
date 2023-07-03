@@ -38,16 +38,16 @@ namespace AtSepete.DataAccess.SeedData
         {
             User user = new User()
             {
-                FirstName = "Admin",
-                LastName = "SuperAdmin",
-                Email = AdminEmail,
-                Password = AdminPassword,
+                FirstName = "",
+                LastName = "",
+                Email = ,
+                Password = ,
                 AccessFailedCount = 0,
-                Adress = "Istanbul",
+                Adress = "",
                 BirthDate = DateTime.Now,
                 CreatedDate = DateTime.Now,
                 Gender = Gender.Male,
-                PhoneNumber = "05555555555",
+                PhoneNumber = "",
                 LockoutEnabled = true,
                 IsActive = true,
                 Role = Role.Admin
